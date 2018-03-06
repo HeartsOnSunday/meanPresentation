@@ -13,7 +13,7 @@ http.createServer(function(request, response) {
     response.write("Oh, look, a server!");
     //end the response, this is how the client knows its received all the data
     response.end();
-//dont forget to listen on 8080 for connections
+//listen on 8080 for connections
 }).listen(8080, function() {
     console.log("Listening on port 8080...");
 });

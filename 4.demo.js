@@ -13,7 +13,7 @@
     
     //end the response, this is how the client knows its received all the data
     
-//dont forget to listen on 8080 for connections
+//listen on 8080 for connections
 
 
 
@@ -24,7 +24,7 @@
 
 //require your module (use fs)
 
-//we use fs to read the file 'index.html'
+//we use fs to read the file 'index.html' with .readFileSync()
 
 //log contents of file
 
@@ -74,7 +74,7 @@ http.createServer(function(request, response) {
     response.writeHead(200);
     //write a message to the response body,
     response.write('This server is awesome');
-    //use the .readFile() method on your file
+    //write your non-blocking code using the .readFile() method on your file
     
         //log the contents to the console when the task of reading it is complete
         
